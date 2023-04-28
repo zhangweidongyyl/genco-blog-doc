@@ -14,8 +14,8 @@ module.exports = {
     ['meta', { name: 'keywords', content: 'vuepress,theme,blog,vdoing' }],
     ['meta', { name: 'theme-color', content: '#11a8cd' }], // 移动浏览器主题颜色
 
-    ['meta', { name: 'wwads-cn-verify', content: '6c4b761a28b734fe93831e3fb400ce87' }], // 广告相关，你可以去掉
-    ['script', { src: 'https://cdn.wwads.cn/js/makemoney.js', type: 'text/javascript' }], // 广告相关，你可以去掉
+    // ['meta', { name: 'wwads-cn-verify', content: '6c4b761a28b734fe93831e3fb400ce87' }], // 广告相关，你可以去掉
+    // ['script', { src: 'https://cdn.wwads.cn/js/makemoney.js', type: 'text/javascript' }], // 广告相关，你可以去掉
   ],
 
   // 主题配置
@@ -56,8 +56,27 @@ module.exports = {
           { text: '评论栏', link: '/pages/ce175c/' },
         ]
       },
-      { text: '中间件系列', link: '/pages/db78e2/' },
-      { text: '后端面试', link: '/pages/5d571c/' },
+      { text: '中间件系列', link: '/pages/db78e2/',
+        items: [
+          { text: 'MySql知识体系', link: '/pages/a20ce8/' },
+          { text: 'ElasticSearch知识体系', link: '/pages/f14bdb/' },
+          { text: '', link: '/pages/3216b0/' },
+          { text: '目录页配置', link: '/pages/54651a/' },
+          { text: '添加摘要', link: '/pages/1cc523/' },
+          { text: '修改主题颜色和样式', link: '/pages/f51918/' },
+          { text: '评论栏', link: '/pages/ce175c/' },
+        ] },
+      { text: '面试', link: '/pages/5d571c/',
+        items: [
+          { text: '如何开始准备面试', link: '/pages/ad9d70/' },
+          { text: 'MySql面经', link: '/pages/f14bdb/' },
+          { text: 'Golang面经', link: '/pages/3216b0/' },
+          { text: '操作系统面经', link: '/pages/54651a/' },
+          { text: '添加摘要', link: '/pages/1cc523/' },
+          { text: '修改主题颜色和样式', link: '/pages/f51918/' },
+          { text: '评论栏', link: '/pages/ce175c/' },
+        ]
+      },
       { text: '问答', link: '/pages/9cc27d/' },
       { text: '赞助', link: '/pages/1b12ed/' },
     ],
@@ -94,7 +113,7 @@ module.exports = {
     // archive: false, // 是否打开归档功能，默认true。 如打开，会做的事情有：1.自动生成归档页面（在@pages文件夹）。如关闭，则反之。
 
     author: { // 文章默认的作者信息，可在md文件中单独配置此信息 String | {name: String, href: String}
-      name: 'Evan Xu', // 必需
+      name: 'Genco Zhang', // 必需
       href: 'https://github.com/xugaoyi' // 可选的
     },
     social: { // 社交图标，显示于博主信息栏和页脚栏
